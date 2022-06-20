@@ -1,0 +1,38 @@
+@ charset "utf-8";
+
+* {margin:0; padding:0; box-sizing:border-box;}
+
+h1,h1 {display:none;}
+
+img {max-width:100%;}
+
+#layout {width:800px; margin:auto;}
+
+#layout section {position:relative;}
+
+#slide {
+	width:4000px; height:300px; display:flex;
+	position:relative; left:-800px;   /*position을 설정해야 움직인다.*/
+}
+
+#arr {
+	position:absolute; width:100%; height:100%; 
+	top:0; display:flex; justify-content:space-between;
+	align-items:center;
+}
+
+#arr button {font-size:5rem; background:none; border:none; transition:0.5s;}
+
+#arr button:hover {transform:scale(1.3); color:tomato; cursor:pointer;}
+
+#circle {
+	position:absolute;
+	bottom:5px; left:330px;
+}
+
+#circle button {
+		width:20px; height:20px; border-radius:50%;
+		background:#ddd; 
+}
+
+#circle button.active {background:green;}
